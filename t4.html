@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="t4.css">
+    
+</head>
+<body>
+    <div id="login">
+        
+        <img src="Sonic.webp" alt="Logo">
+        <p>Tarea 4</p>
+        <P>Login</P>
+        <form>
+            <input id="user" type="text" placeholder="Usuario" required>
+            <div class="Cpassword">
+                <input type="password" placeholder="Contraseña" required id="password">
+                <span class="veer" onclick="ver(this)">🦔</span>
+            </div>
+            <p id="fail-login">Usuario o contraseña no válidos</p>
+            <button type="button" id="login-button" onclick="simuladorLogin()">Ingresar</button>
+            
+
+        </form>
+    </div>
+        <button id="return-button" onclick="regresarAlFormulario()" style="display: none;">Regresar al formulario</button>
+   
+    <div id="Cloader">
+        <p id="success">Has ingresado, exitosamente...</p>
+        <br>
+        <div id="loader"></div>
+    </div>
+
+    <audio id="click-sound">
+        <source src="chaos-emerald-sonic.mp3" type="audio/mpeg">
+        
+    </audio>
+    
+
+    
+</body>
+<script src="t4.js"></script>
+</html>

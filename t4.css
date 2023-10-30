@@ -1,0 +1,164 @@
+body {
+    background-image: url('F1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#login {
+    background-color: transparent;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: relative; 
+    overflow: hidden;
+}
+
+ #login:hover {
+    background-color: #ffffffc9;
+    opacity: 2;
+    transition: background-color 0.3s ease;
+    transform: rotate(2deg) scale(1.00); 
+    transition: transform 0.3s ease;
+    color: black;
+    animation: vibrar 0.2s ease-in-out 0.20s;
+            
+}
+#login {
+    animation: moverIzquierdaDerecha 0.5s linear;
+    animation-fill-mode: forwards; /* Para que el elemento se quede estático en el centro */
+  }
+  
+  @keyframes moverIzquierdaDerecha {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+#login img {
+    max-width: 150px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#login p {
+    margin-top: 10px;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#login button {
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out; 
+    background-image: url('./assets/F4.jpg'); 
+    background-size: 100% 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#login button:hover {
+    transform: scale(1.1); 
+}
+
+#login .Cpassword{
+    display: flex;
+    align-items: center;
+}
+
+.veer{
+    position: relative;
+    right: 20px;
+}
+
+#Cloader{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#success {
+    color: lightgreen;
+    background-color: black;
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #dbd034;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+.loader {
+    background-image: url('SG.gif'); 
+    background-size: cover;
+   
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+#fail-login {
+    color: red;
+    background-color: white; 
+    display: none;
+    border-radius: 4px;
+    font-size:smaller;
+    padding: 2px;
+}
+
+#return-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-image: url('F1.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+#return-button:hover {
+    transform: scale(1.1);
+}
+
